@@ -33,6 +33,7 @@ public class ZuulLoggingFilter extends ZuulFilter {
         /** Try:
          *      http://localhost:8765/currency-exchange-service/currency-exchange/from/USD/to/EUR
          *      http://localhost:8765/currency-conversion-service/currency-converter/from/EUR/to/USD/quantity/100
+         *      http://localhost:8765/currency-conversion-service/currency-converter-feign/from/EUR/to/USD/quantity/100
          */
         log.info("request -> {} request uri -> {}", request, request.getRequestURI());
 
